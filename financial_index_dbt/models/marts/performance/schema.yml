@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: fct_index_returns
+    description: |
+      Multi-period returns from daily to 5-year with proper annualization.
+      Includes both simple and log returns for different analytical needs.
+    columns:
+      - name: annual_return_pct
+        description: 1-year trailing return (252 trading days)
+      - name: return_3y_annualized_pct
+        description: 3-year CAGR (compound annual growth rate)
+      - name: return_5y_annualized_pct
+        description: 5-year CAGR (compound annual growth rate)
+
+  - name: fct_index_volatility
+    description: |
+      Rolling volatility calculations with SQRT(252) annualization.
+      Multiple windows (30D to 252D) for different risk horizons.
+    columns:
+      - name: volatility_252d_pct
+        description: 1-year annualized volatility (standard deviation * sqrt(252))

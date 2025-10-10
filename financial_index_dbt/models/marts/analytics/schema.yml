@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: fct_index_valuations
+    description: |
+      Index-level valuation metrics using harmonic mean for P/E ratios 
+      and weighted averages for income metrics. Calculated as of latest 
+      trading date for S&P 500 and S&P 100.
+    columns:
+      - name: index_pe_ratio
+        description: Harmonic mean P/E ratio (prevents outlier distortion)
+      - name: index_dividend_yield_pct
+        description: Weighted average dividend yield in percentage
+
+  - name: fct_top10_holdings
+    description: |
+      Top 10 weighted holdings per index with concentration analysis.
+      Includes cumulative weights to assess concentration risk.
+    columns:
+      - name: holding_rank
+        description: Rank by index weight (1 = largest position)
+      - name: cumulative_weight_pct
+        description: Running total of weights for concentration analysis
