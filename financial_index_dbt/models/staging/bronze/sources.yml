@@ -1,0 +1,20 @@
+# models/staging/bronze/sources.yml
+version: 2
+
+sources:
+  - name: bronze
+    description: Raw data layer - data as received from source systems
+    database: financial_index_db
+    schema: bronze
+    tables:
+      - name: raw_index_constituents_current
+        description: Current members of S&P 500 and S&P 100 indices
+        
+      - name: raw_index_constituents_historical
+        description: Historical index membership changes (1957-2025)
+        
+      - name: raw_index_prices_base100
+        description: Daily index prices normalized to base 100
+        
+      - name: raw_stock_valuation_metrics
+        description: Fundamental valuation metrics for 794 stocks
