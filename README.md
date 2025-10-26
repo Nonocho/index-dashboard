@@ -1,8 +1,6 @@
 # 📊 Index Analytics Dashboard
 
-A modern financial analytics dashboard for S&P 500 and S&P 100 index analysis, showcasing data engineering and quantitative finance skills.
-
-![Dashboard Preview](https://via.placeholder.com/800x400/2B1773/FFFFFF?text=Index+Analytics+Dashboard)
+A financial analytics dashboard for S&P 500 and S&P 100 index analysis, showcasing data engineering and quantitative finance skills.
 
 ## 🎯 Project Overview
 
