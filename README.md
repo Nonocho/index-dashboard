@@ -10,5 +10,3 @@ This project demonstrates a complete modern data stack implementation for financ
 - **Analytics:** Multi-period returns, volatility analysis, Sharpe ratios, drawdown tracking
 - **Visualization:** Interactive Plotly charts with Streamlit frontend
 - **Domain Expertise:** Quantitative finance metrics and portfolio analysis
-
-## 🏗️ Architecture
